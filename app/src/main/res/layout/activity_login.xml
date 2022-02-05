@@ -4,21 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".Login"
+    android:background="@drawable/welcome_background">
 
-    <ImageView
-        android:id="@+id/app_logo"
-        android:layout_width="150dp"
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:src="@drawable/messenger"
+        android:layout_marginTop="70dp"
+        android:paddingLeft="5dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"/>
+        android:text="Hello Again! Welcome back"
+        android:textSize="60dp"
+        android:textColor="@color/blue"/>
 
       <EditText
           android:id="@+id/edit_email"
           android:layout_width="match_parent"
           android:layout_height="50dp"
-          android:layout_below="@+id/app_logo"
+          android:layout_below="@+id/welcome_message"
           android:layout_marginTop="10dp"
           android:hint="Email"
           android:paddingLeft="13dp"
