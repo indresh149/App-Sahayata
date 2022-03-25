@@ -4,65 +4,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/moreefflogin"
+
     tools:context=".Login"
-    android:background="@drawable/welcome_background">
+    >
 
     <TextView
         android:id="@+id/welcome_message"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="75dp"
         android:layout_marginTop="70dp"
+        android:layout_marginLeft="150dp"
         android:paddingLeft="5dp"
         android:layout_centerHorizontal="true"
-        android:text="Hello Again! Welcome back"
-        android:textSize="60dp"
+        android:text="Sahayata"
+        android:textSize="55dp"
         android:textColor="@color/blue"/>
 
-      <EditText
-          android:id="@+id/edit_email"
-          android:layout_width="match_parent"
-          android:layout_height="50dp"
-          android:layout_below="@+id/welcome_message"
-          android:layout_marginTop="10dp"
-          android:hint="Email"
-          android:paddingLeft="13dp"
-          android:background="@drawable/edit_background"
-          android:layout_marginLeft="20dp"
-          android:layout_marginRight="20dp"/>
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/welcome_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_background"
+        android:hint="Email"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:paddingLeft="13dp" />
 
     <EditText
         android:id="@+id/edit_password"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@+id/edit_email"
-        android:layout_marginTop="10dp"
-        android:hint="Password"
-        android:paddingLeft="13dp"
-        android:background="@drawable/edit_background"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
-     <Button
-         android:id="@+id/btnLogin"
-         android:layout_width="150dp"
-         android:layout_height="wrap_content"
-         android:layout_below="@id/edit_password"
-         android:text="Log in"
-         android:background="@drawable/btn_background"
-         android:textColor="@color/white"
-         android:textSize="20dp"
-         android:layout_centerHorizontal="true"
-         android:layout_marginTop="10dp"/>
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_background"
+        android:hint="Password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:paddingLeft="13dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_password"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_background"
+        android:text="Log in"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/btnSignUp"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/btnLogin"
-        android:text="Sign Up"
-        android:background="@drawable/btn_background"
-        android:textColor="@color/white"
-        android:textSize="20dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="38dp"
+        android:background="@drawable/btn_background"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/btnSignUp"
+        android:layout_marginLeft="147dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/appppicoooon"/>
+
 
 </RelativeLayout>

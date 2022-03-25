@@ -32,28 +32,35 @@ class Login : AppCompatActivity() {
 
         btnSignUp.setOnClickListener {
             val intent = Intent(this,SignUp::class.java)
+            finish()
             startActivity(intent)
         }
+
         btnLogin.setOnClickListener {
-            val email = editEmail.text.toString()
-            val password = editPassword.text.toString()
-
-            login(email,password);
+            val intent = Intent(this,HomePage::class.java)
+            finish()
+            startActivity(intent)
         }
+//        btnLogin.setOnClickListener {
+//            val email = editEmail.text.toString()
+//            val password = editPassword.text.toString()
+//
+//            login(email,password);
+//        }
     }
 
-    private fun login(email: String,password: String){
-        //logic for login in user
-        mAuth.signInWithEmailAndPassword(email, password)
-            .addOnCompleteListener(this) { task ->
-                if (task.isSuccessful) {
-                    // code for logging in user
-                    val intent = Intent(this@Login, MainActivity::class.java)
-                    startActivity(intent)
-                } else {
-                    // If sign in fails, display a message to the user.
-                    Toast.makeText(this@Login, "User does not exist", Toast.LENGTH_SHORT).show()
-                }
-            }
-    }
+//    private fun login(email: String,password: String){
+//        //logic for login in user
+//        mAuth.signInWithEmailAndPassword(email, password)
+//            .addOnCompleteListener(this) { task ->
+//                if (task.isSuccessful) {
+//                    // code for logging in user
+//                    val intent = Intent(this@Login, HomePage::class.java)
+//                    startActivity(intent)
+//                } else {
+//                    // If sign in fails, display a message to the user.
+//                    Toast.makeText(this@Login, "User does not exist", Toast.LENGTH_SHORT).show()
+//                }
+//            }
+//    }
 }
